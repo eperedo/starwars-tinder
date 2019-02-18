@@ -1,0 +1,18 @@
+{
+	"name": "star-wars-tinder",
+	"version": "1.0.0",
+	"description": "Find the path either to dark side or the force the tinder way",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"now-build": "nuxt generate"
+	},
+	"keywords": [],
+	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
+	"license": "MIT",
+	"dependencies": {
+		"nuxt": "2.4.3"
+	}
+}
