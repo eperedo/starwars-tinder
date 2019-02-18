@@ -19,14 +19,7 @@ const config = {
 					'Find the path either to dark side or the force the tinder way',
 			},
 		],
-		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{
-				rel: 'stylesheet',
-				type: 'text/css',
-				href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400',
-			},
-		],
+		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 	},
 	loading: { color: '#0000ff' },
 	mode: 'spa',
