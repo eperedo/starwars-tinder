@@ -1,10 +1,10 @@
 <template>
-  <section class="wrapper">
+  <main class="wrapper">
     <header>
       <h1 class="title">Star Wars Tinder</h1>
     </header>
     <nuxt-child/>
-  </section>
+  </main>
 </template>
 
 <script>

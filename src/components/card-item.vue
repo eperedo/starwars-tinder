@@ -2,7 +2,7 @@
   <div class="card">
     <picture>
       <figure>
-        <app-avatar :img="img" :height="height" :width="width"/>
+        <app-avatar :img="img" :height="height" :width="width" :alt="`Character: ${name}`"/>
       </figure>
     </picture>
     <h2 class="subtitle">{{ name }}</h2>

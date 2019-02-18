@@ -1,11 +1,18 @@
 <template>
   <section>
     <card-list :cards="cards" @selected-card="nextCard" v-if="!showResults"></card-list>
-    <img v-if="showResults" class="tinder-logo" src="~/assets/tinder.svg" height="128" width="128">
+    <img
+      v-if="showResults"
+      class="tinder-logo"
+      alt="Star Wars Tinder Logo"
+      src="~/assets/tinder.svg"
+      height="128"
+      width="128"
+    >
     <section class="result-container" v-if="showResults">
-      <h3 class="result-title">It is a Match!
+      <h2 class="result-title">It is a Match!
         <br>I mean... In a star wars universe you should look for people who looks like this:
-      </h3>
+      </h2>
       <div class="result-item">
         <span class="result-label">Gender</span>
         <span class="result-value">{{match.gender[0]}}</span>

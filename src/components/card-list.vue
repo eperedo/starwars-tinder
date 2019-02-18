@@ -3,8 +3,13 @@
     <card-item
       v-for="(card, index) in withStyleCards"
       :key="card.id"
+      :id="card.id"
+      :name="card.name"
+      :height="card.height"
+      :width="card.width"
+      :img="card.img"
       :card="card"
-      v-bind="card"
+      :style="card.style"
       @selected-card="$emit('selected-card', { $event, index });"
     ></card-item>
   </transition-group>
