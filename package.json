@@ -1,7 +1,7 @@
 {
 	"name": "star-wars-tinder",
 	"version": "1.0.0",
-	"description": "Find the path either to dark side or the force the tinder way",
+	"description": "Someday we will live in a star wars universe, be prepared!",
 	"scripts": {
 		"dev": "nuxt",
 		"build": "nuxt build",

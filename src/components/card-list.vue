@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <transition-group id="app" tag="div" name="card">
     <card-item
       v-for="(card, index) in withStyleCards"
       :key="card.id"
@@ -7,7 +7,7 @@
       v-bind="card"
       @selected-card="$emit('selected-card', { $event, index });"
     ></card-item>
-  </div>
+  </transition-group>
 </template>
 
 <script>
@@ -57,5 +57,16 @@ export default {
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: auto;
+}
+
+.card-enter-active,
+.card-leave-active {
+	transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.card-enter,
+.card-leave-to {
+	opacity: 0;
+	transform: translateY(120px);
 }
 </style>
