@@ -2,7 +2,7 @@
   <div class="card">
     <picture>
       <figure>
-        <img :src="img" :height="height" :width="width">
+        <app-avatar :img="img" :height="height" :width="width"/>
       </figure>
     </picture>
     <h2 class="subtitle">{{ name }}</h2>
@@ -14,12 +14,17 @@
 </template>
 
 <script>
+import appAvatar from './app-avatar.vue';
+
 function selectedCard(option) {
 	this.$emit('selected-card', { card: this.card, option });
 }
 
 export default {
 	name: 'card-item',
+	components: {
+		appAvatar,
+	},
 	props: {
 		id: {
 			type: Number,
