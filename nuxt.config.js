@@ -1,8 +1,10 @@
 'use strict';
 
+const STAR_WARS_URL = 'https://starwars.egghead.training';
+
 const config = {
 	env: {
-		STAR_WARS_URL: 'https://starwars.egghead.training',
+		STAR_WARS_URL,
 	},
 	generate: {
 		dir: './../dist',
@@ -22,8 +24,27 @@ const config = {
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 	},
 	loading: { color: '#0000ff' },
+	manifest: {
+		name: 'Star Wars Tinder',
+		lang: 'en',
+	},
 	mode: 'spa',
+	modules: ['@nuxtjs/pwa'],
 	rootDir: './src',
+	workbox: {
+		runtimeCaching: [
+			{
+				urlPattern: 'https://fonts.gstatic.com/s/opensans/.*',
+				handler: 'cacheFirst',
+				method: 'GET',
+			},
+			{
+				urlPattern: `${STAR_WARS_URL}/.*`,
+				handler: 'networkFirst',
+				method: 'GET',
+			},
+		],
+	},
 };
 
 module.exports = config;

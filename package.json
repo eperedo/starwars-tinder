@@ -13,6 +13,7 @@
 	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
 	"license": "MIT",
 	"dependencies": {
+		"@nuxtjs/pwa": "3.0.0-beta.8",
 		"nuxt": "2.4.3"
 	}
 }
