@@ -83,3 +83,4 @@ dist
 src/dist
 
 sw.*
+src/.DS_Store

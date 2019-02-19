@@ -23,6 +23,9 @@ const config = {
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 	},
+	icon: {
+		iconSrc: './src/assets/swtinder.png',
+	},
 	loading: { color: '#0000ff' },
 	manifest: {
 		name: 'Star Wars Tinder',
