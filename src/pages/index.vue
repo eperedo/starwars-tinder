@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="cards-container">
     <card-list :cards="cards" @selected-card="nextCard" v-if="!showResults"></card-list>
     <img
       v-if="showResults"
@@ -181,6 +181,10 @@ export default {
 </script>
 
 <style scoped>
+.cards-container {
+	grid-column: 1 / -1;
+}
+
 .result-container {
 	color: var(--colorFontPrimary);
 	font-size: 24px;
