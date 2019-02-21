@@ -43,7 +43,7 @@ const config = {
 			},
 			{
 				urlPattern: `${STAR_WARS_URL}/.*`,
-				handler: 'networkFirst',
+				handler: 'cacheFirst',
 				method: 'GET',
 			},
 		],
